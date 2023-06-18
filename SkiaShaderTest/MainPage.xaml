@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SkiaShaderTest.MainPage"
+             xmlns:controls="clr-namespace:SkiaShaderTest.Controls"
+>
+
+ <Grid RowDefinitions="*,auto" IgnoreSafeArea="True">
+        <controls:Panel x:Name="panel"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Grid.Row="0"
+                Grid.RowSpan="2"/>
+
+        <CheckBox
+            IsChecked="{Binding ShaderOn, Source={x:Reference panel}, Mode=TwoWay}"
+            MinimumWidthRequest="100"
+            BackgroundColor="RoyalBlue"
+            Color="AliceBlue"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            />
+    </Grid>
+
+</ContentPage>
+
