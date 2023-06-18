@@ -1,9 +1,5 @@
-﻿using Microsoft.Maui.Graphics.Platform;
-using System.Reflection;
-using SkiaSharp;
+﻿using SkiaSharp;
 using SkiaSharp.Views.Maui.Controls;
-using IImage = Microsoft.Maui.Graphics.IImage;
-using SkiaSharp.Views.Maui;
 using System.Diagnostics;
 
 namespace SkiaShaderTest.Controls
